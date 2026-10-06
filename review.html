@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Request Received | Emigraphix</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #061331;
+            color: #101828;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .confirmation-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 20px;
+            background: linear-gradient(
+                135deg,
+                #061331 0%,
+                #0b1f4d 100%
+            );
+        }
+
+        .confirmation-card {
+            width: min(940px, 100%);
+            background: #ffffff;
+            padding: 55px 60px;
+            border-top: 5px solid #0b1f4d;
+        }
+
+        .confirmation-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 55px;
+        }
+
+        .confirmation-brand {
+            font-size: 1rem;
+            font-weight: 900;
+            letter-spacing: 0.15em;
+            color: #0b1f4d;
+        }
+
+        .success-mark {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: #0b1f4d;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .eyebrow {
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 0.18em;
+            color: #0b1f4d;
+            margin-bottom: 22px;
+        }
+
+        h1 {
+            max-width: 780px;
+            font-size: clamp(3rem, 7vw, 5.8rem);
+            line-height: 0.98;
+            letter-spacing: -0.055em;
+        }
+
+        h1 span {
+            display: block;
+            color: #0b1f4d;
+        }
+
+        .intro {
+            max-width: 650px;
+            margin-top: 28px;
+            color: #667085;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        .next-steps {
+            margin-top: 52px;
+            border-top: 1px solid #dde2ea;
+        }
+
+        .next-title {
+            padding: 20px 0;
+            font-size: 0.75rem;
+            font-weight: 800;
+            letter-spacing: 0.15em;
+            color: #0b1f4d;
+        }
+
+        .next-step {
+            display: grid;
+            grid-template-columns: 55px 1fr;
+            gap: 22px;
+            padding: 25px 0;
+            border-top: 1px solid #dde2ea;
+        }
+
+        .next-step > span {
+            color: #0b1f4d;
+            font-size: 0.72rem;
+            font-weight: 800;
+        }
+
+        .next-step h3 {
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        .next-step p {
+            max-width: 600px;
+            color: #667085;
+            font-size: 0.92rem;
+            line-height: 1.6;
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 38px;
+        }
+
+        .button {
+            min-height: 50px;
+            padding: 0 24px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            border-radius: 3px;
+        }
+
+        .primary {
+            background: #0b1f4d;
+            color: white;
+        }
+
+        .secondary {
+            border: 1px solid #dde2ea;
+            color: #0b1f4d;
+            background: white;
+        }
+
+        .note {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid #dde2ea;
+            color: #7a8494;
+            font-size: 0.82rem;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 650px) {
+            .confirmation-page {
+                padding: 20px 14px;
+            }
+
+            .confirmation-card {
+                padding: 32px 23px;
+            }
+
+            .confirmation-top {
+                margin-bottom: 40px;
+            }
+
+            h1 {
+                font-size: 3.1rem;
+            }
+
+            .next-step {
+                grid-template-columns: 38px 1fr;
+            }
+
+            .actions {
+                flex-direction: column;
+            }
+
+            .button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="confirmation-page">
+
+        <section class="confirmation-card">
+
+            <div class="confirmation-top">
+
+                <a href="index.html" class="confirmation-brand">
+                    EMIGRAPHIX
+                </a>
+
+                <div class="success-mark">
+                    ✓
+                </div>
+
+            </div>
+
+
+            <p class="eyebrow">
+                PROJECT REQUEST RECEIVED
+            </p>
+
+
+            <h1>
+                Your brief is with us.
+                <span>We’ll take it from here.</span>
+            </h1>
+
+
+            <p class="intro">
+                Thank you for choosing Emigraphix. Your project details
+                have been received and will be reviewed carefully.
+            </p>
+
+
+            <div class="next-steps">
+
+                <p class="next-title">
+                    WHAT HAPPENS NEXT
+                </p>
+
+
+                <div class="next-step">
+
+                    <span>01</span>
+
+                    <div>
+                        <h3>We review your brief</h3>
+
+                        <p>
+                            Your project requirements, files and selected
+                            package will be checked.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="next-step">
+
+                    <span>02</span>
+
+                    <div>
+                        <h3>We contact you</h3>
+
+                        <p>
+                            You’ll receive feedback, confirmed pricing where
+                            required, and the next steps through your preferred
+                            communication method.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="next-step">
+
+                    <span>03</span>
+
+                    <div>
+                        <h3>Your project begins</h3>
+
+                        <p>
+                            Once everything is confirmed, Emigraphix will
+                            proceed with your design.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="actions">
+
+                <a href="index.html" class="button primary">
+                    Return to Emigraphix
+                </a>
+
+                <a
+                    href="https://wa.me/233550585227"
+                    target="_blank"
+                    class="button secondary"
+                >
+                    Chat on WhatsApp
+                </a>
+
+            </div>
+
+
+            <p class="note">
+                Please keep the phone number or email address you submitted
+                accessible so we can reach you.
+            </p>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
